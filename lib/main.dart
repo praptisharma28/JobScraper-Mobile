@@ -9,14 +9,12 @@ import 'package:jobhunt_mobile/blocs/darkTheme/dark_theme_bloc.dart';
 import 'package:jobhunt_mobile/blocs/db/local_db_bloc.dart';
 
 import 'package:jobhunt_mobile/repo/jobRepository.dart';
-
 import 'package:jobhunt_mobile/views/homepage.dart';
-
 import 'package:sizer/sizer.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await dotenv.load(fileName: ".env");
+  await dotenv.load(fileName: "env");
 
   print(dotenv.env['JOB_API'].toString() + ' is loaded from .env file.');
 

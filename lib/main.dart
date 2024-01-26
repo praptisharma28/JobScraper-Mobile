@@ -14,7 +14,7 @@ import 'package:sizer/sizer.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await dotenv.load(fileName: "env");
+  await dotenv.load(fileName: ".env");
 
   print(dotenv.env['JOB_API'].toString() + ' is loaded from .env file.');
 

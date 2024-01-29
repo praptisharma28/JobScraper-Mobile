@@ -71,9 +71,8 @@ class JobCRUDBloc extends Bloc<LocalDbEvent, LocalDbState> {
   }
 
   Future _searchJobs(String query, Emitter<LocalDbState> emit) async {
-   ///Future.delayed(Duration(milliseconds: 100),() {
-     emit(LocalDbLoading());
-   //});
+  
+   emit(LocalDbLoading());
    Future.delayed(Duration(milliseconds: 100));
     
     await searchResult(query).then((value) {   
